@@ -1,7 +1,7 @@
 export const adminStatisticsData = [
     {
         id: "primary",
-        title: "Total Revenue (₹)",
+        title: "Total Nursery Revenue",
         total_number: "₹50,66,800",
         completed_number: "",
         progress: "81%",
@@ -10,8 +10,8 @@ export const adminStatisticsData = [
     },
     {
         id: "success",
-        title: "Total Sales",
-        total_number: "9,27,500",
+        title: "Plants Sold This Month",
+        total_number: "9,275",
         completed_number: "",
         progress: "95%",
         progress_info: "Ahead of target",
@@ -19,7 +19,7 @@ export const adminStatisticsData = [
     },
     {
         id: "warning",
-        title: "Global Dispatches",
+        title: "Total Plants Dispatched",
         total_number: "250",
         completed_number: "220",
         progress: "88%",
@@ -28,7 +28,7 @@ export const adminStatisticsData = [
     },
     {
         id: "danger",
-        title: "Global Mortality Rate",
+        title: "Nursery Mortality Rate",
         total_number: "4.2%",
         completed_number: "",
         progress: "4%",

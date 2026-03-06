@@ -4,17 +4,19 @@ import { FiAlignRight, FiArrowLeft, FiDownload } from 'react-icons/fi'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 
-const PageHeader = ({ children }) => {
+const PageHeader = ({ children, folderName: propFolderName, fileName: propFileName }) => {
     const [openSidebar, setOpenSidebar] = useState(false)
     const pathName = useLocation().pathname
-    let folderName = ""
-    let fileName = ""
-    if (pathName === "/") {
-        folderName = "OM Farms Nursery"
-        fileName = "Operations Dashboard"
-    } else {
-        folderName = pathName.split("/")[1]
-        fileName = pathName.split("/")[2]
+    let folderName = propFolderName || ""
+    let fileName = propFileName || ""
+    if (!propFolderName || !propFileName) {
+        if (pathName === "/") {
+            folderName = "OM Farms Nursery"
+            fileName = "Operations Dashboard"
+        } else {
+            folderName = pathName.split("/")[1]
+            fileName = pathName.split("/")[2]
+        }
     }
 
     const [isExporting, setIsExporting] = useState(false);

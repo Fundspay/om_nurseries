@@ -1,36 +1,38 @@
 import React from 'react'
-import LeadsOverviewChart from '@/components/widgetsCharts/LeadsOverviewChart'
+import AdminLeadsOverviewChart from '@/components/widgetsCharts/AdminLeadsOverviewChart'
 import TeamProgress from '@/components/widgetsList/Progress'
-import PaymentRecordChart from '@/components/widgetsCharts/PaymentRecordChart'
+import AdminPaymentRecordChart from '@/components/widgetsCharts/AdminPaymentRecordChart'
 import AdminOverviewStatistics from '@/components/widgetsStatistics/AdminOverviewStatistics'
-import SalesMiscellaneous from '@/components/widgetsMiscellaneous/SalesMiscellaneous'
+import AdminSalesMiscellaneous from '@/components/widgetsMiscellaneous/AdminSalesMiscellaneous'
 import PageHeaderDate from '@/components/shared/pageHeader/PageHeaderDate'
 import PageHeader from '@/components/shared/pageHeader/PageHeader'
 import Footer from '@/components/shared/Footer'
 import { projectsDataTwo } from '@/utils/fackData/projectsDataTwo'
 import PaymentStatistics from '@/components/widgetsStatistics/PaymentStatistics'
 import TopSelling from '@/components/widgetsTables/TopSelling'
-import Customers from '@/components/widgetsTables/Customers'
-import GoalMiscellaneous from '@/components/widgetsMiscellaneous/GoalMiscellaneous'
+import AdminGoalMiscellaneous from '@/components/widgetsMiscellaneous/AdminGoalMiscellaneous'
+import AdminCustomers from '@/components/widgetsTables/AdminCustomers'
+import PlantInventoryValueWidget from '@/components/widgetsMiscellaneous/PlantInventoryValueWidget'
 
 const AdminDashboard = () => {
     return (
         <>
-            <PageHeader >
+            <PageHeader folderName="Nursery Finance & Sales Dashboard" fileName="Nursery Finance & Sales Dashboard">
                 <PageHeaderDate />
             </PageHeader>
             <div className='main-content'>
                 <div className='row'>
                     <AdminOverviewStatistics />
                     <PaymentStatistics />
-                    
-                    <PaymentRecordChart />
+
+                    <AdminPaymentRecordChart />
                     {/* <TopSelling title={"Top Selling Plants"} /> */}
-                    
-                    <SalesMiscellaneous isFooterShow={true} dataList={projectsDataTwo} />
-                    <LeadsOverviewChart chartHeight={315} />
-                    <GoalMiscellaneous />
-                    <Customers title={"New Nursery Clients"} />
+
+                    <AdminSalesMiscellaneous />
+                    <AdminLeadsOverviewChart chartHeight={315} />
+                    <AdminGoalMiscellaneous />
+                    <AdminCustomers title={"Recent Nursery Customers"} />
+                    <PlantInventoryValueWidget />
                     {/* <TeamProgress title={"Farm Staff Progress"} footerShow={true} /> */}
                 </div>
             </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import getIcon from '@/utils/getIcon';
 const paymentData = [
-    { status: "Payments Received", total: 100, completed: 78, percentage: 36.85, icon: "feather-arrow-up", color: "success" },
-    { status: "Pending Invoices", total: 50, completed: 38, percentage: 23.45, icon: "feather-arrow-down", color: "warning" },
-    { status: "Overdue Payments", total: 30, completed: 15, percentage: 25.44, icon: "feather-arrow-down", color: "danger" },
-    { status: "Refunded Orders", total: 10, completed: 3, percentage: 12.68, icon: "feather-arrow-up", color: "info" }
+    { status: "Orders Paid", total: 100, completed: 78, percentage: 78.00, icon: "feather-arrow-up", color: "success" },
+    { status: "Pending Customer Payments", total: 50, completed: 38, percentage: 76.00, icon: "feather-arrow-down", color: "warning" },
+    { status: "Overdue Nursery Orders", total: 30, completed: 15, percentage: 50.00, icon: "feather-arrow-down", color: "danger" },
+    { status: "Cancelled Plant Orders", total: 10, completed: 3, percentage: 30.00, icon: "feather-arrow-up", color: "info" }
 ];
 
 const PaymentStatistics = () => {
