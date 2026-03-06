@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://fundsroom.github.io/duralux-react",
+  "homepage": "https://fundspay.github.io/om_nurseries",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
