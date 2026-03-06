@@ -10,8 +10,8 @@ const PageHeader = ({ children }) => {
     let folderName = ""
     let fileName = ""
     if (pathName === "/") {
-        folderName = "Dashboard"
-        fileName = "Dashboard"
+        folderName = "OM Farms Nursery"
+        fileName = "Operations Dashboard"
     } else {
         folderName = pathName.split("/")[1]
         fileName = pathName.split("/")[2]

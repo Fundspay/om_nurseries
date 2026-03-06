@@ -2,9 +2,9 @@ export const leadsOverviewChartOptions = {
     dataLabels: {
         enabled: !1
     },
-    series: [20, 15, 10, 18, 10, 15, 16, 14, 10],
-    labels: ["Retail", "Wholesale", "Landscapers", "Gov. Contracts", "Exporters", "Corporate", "Online D2C", "Local Farms", "Others"],
-    colors: ["#3454d1", "#1565c0", "#1976d2", "#1e88e5", "#2196f3", "#42a5f5", "#64b5f6", "#90caf9", "#aad6fa"],
+    series: [30, 25, 20, 15, 10],
+    labels: ["Fruit Plants", "Flowering Plants", "Ornamental Plants", "Medicinal Plants", "Others"],
+    colors: ["#3454d1", "#25b865", "#d13b4c", "#ffa21d", "#e4e4e4"],
     stroke: {
         width: 0, lineCap: "round"
     },
@@ -56,7 +56,7 @@ export const leadsOverviewChartOptions = {
     tooltip: {
         y: {
             formatter: function (e) {
-                return +e + "K"
+                return +e + "%"
             }
         },
         style: {

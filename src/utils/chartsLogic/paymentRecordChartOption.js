@@ -19,7 +19,7 @@ export const paymentRecordChartOption = () => {
                 columnWidth: "29%"
             }
         },
-        colors: ["#3454d1", "#a2acc7", "#E1E3EA"],
+        colors: ["#3454d1", "#a2acc7", "#28a745"],
         series: [
             {
                 name: "Watering",
@@ -91,7 +91,7 @@ export const paymentRecordChartOption = () => {
             },
             padding: {
                 left: 35,
-                right:28
+                right: 28
             },
         },
         dataLabels: {

@@ -5,9 +5,10 @@ import getIcon from '@/utils/getIcon'
 
 
 const overviewInfo = [
-    { title: "Watering Operations Completed", icon: "feather-star", total_number: "45", completed_number: "30", progress: "28", chartColor: "#3454d1", color: "primary" },
-    { title: "Plant Health Issues Detected", icon: "feather-file-text", total_number: "12", completed_number: "5", progress: "34", chartColor: "#25b865", color: "success" },
-    { title: "Plants Ready for Dispatch", icon: "feather-airplay", total_number: "250", completed_number: "220", progress: "42", chartColor: "#d13b4c", color: "danger" },
+    { title: "Watering Operations Completed", icon: "feather-droplet", total_number: "45", completed_number: "30", progress: "28", chartColor: "#3454d1", color: "primary" },
+    { title: "Fertilizer Applications Completed", icon: "feather-star", total_number: "30", completed_number: "18", progress: "15", chartColor: "#ffa21d", color: "warning" },
+    { title: "Plant Health Issues Detected", icon: "feather-alert-triangle", total_number: "12", completed_number: "5", progress: "34", chartColor: "#d13b4c", color: "danger" },
+    { title: "Plants Ready for Dispatch", icon: "feather-truck", total_number: "250", completed_number: "220", progress: "42", chartColor: "#25b865", color: "success" },
 ]
 
 const TasksOverviewChart = () => {
@@ -20,7 +21,7 @@ const TasksOverviewChart = () => {
             {
                 overviewInfo.map(({ completed_number, icon, id, progress, title, total_number, chartColor, color }, index) => {
                     return (
-                        <div key={index} className="col-lg-4 task-overview-card">
+                        <div key={index} className="col-xxl-3 col-md-6 task-overview-card">
                             <div className="card mb-4 stretch stretch-full">
                                 <div className="card-header d-flex align-items-center justify-content-between">
                                     <div className="d-flex gap-3 align-items-center">
@@ -57,4 +58,3 @@ const TasksOverviewChart = () => {
 }
 
 export default TasksOverviewChart
-

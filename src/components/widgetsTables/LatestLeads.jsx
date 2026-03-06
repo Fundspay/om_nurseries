@@ -24,10 +24,10 @@ const LatestLeads = ({ title }) => {
                         <table className="table mb-0">
                             <thead>
                                 <tr className="border-b">
-                                    <th scope="row">Time</th>
-                                    <th>Activity</th>
+                                    <th scope="row">{title === "Recent Plant Activity" ? "Time" : "Time"}</th>
+                                    <th>{title === "Recent Plant Activity" ? "Activity" : "Activity"}</th>
                                     <th>Block</th>
-                                    <th>Staff</th>
+                                    <th>{title === "Recent Plant Activity" ? "Staff" : "Staff"}</th>
                                     <th className="text-end">Actions</th>
                                 </tr>
                             </thead>

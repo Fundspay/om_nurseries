@@ -1,31 +1,29 @@
 export const projectsDataTwo = [
-
     {
-        name: 'Bulk Plant Delivery',
-        category: 'Logistics',
-        price: "₹450000",
-        sold: "12",
-        status: 'Dispatched',
+        name: 'Propagation Stage',
+        category: 'Phase 1',
+        price: "25,300",
+        sold: "Plants",
+        status: 'Active',
         color: "primary",
-        icon: 'feather-truck'
+        icon: 'feather-layers'
     },
     {
-        name: 'Individual Plant Delivery',
-        category: 'Logistics',
-        price: "₹145000",
-        sold: "3",
+        name: 'Growing Stage',
+        category: 'Phase 2',
+        price: "127,540",
+        sold: "Plants",
         status: 'Active',
         color: "primary",
         icon: 'feather-activity'
     },
     {
-        name: 'Nursery Health Audit',
-        category: 'Services',
-        price: "₹125000",
-        sold: "8",
-        status: 'Scheduled',
+        name: 'Ready for Sale',
+        category: 'Phase 3',
+        price: "52,430",
+        sold: "Plants",
+        status: 'Active',
         color: "primary",
-        icon: 'feather-file-text'
+        icon: 'feather-check-circle'
     },
-
 ]
