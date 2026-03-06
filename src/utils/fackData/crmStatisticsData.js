@@ -1,9 +1,3 @@
-import axios from 'axios';
-
-const API_URL = 'https://eduroom.in/api/v1/status/listall';
-const MAX_ITEMS_TO_DISPLAY = 5;
-
-// Keep your original hardcoded data
 export const crmStatisticsData = [
     {
         id: 1,
@@ -14,6 +8,7 @@ export const crmStatisticsData = [
         progress_info: "35 Acres Pending",
         icon: "feather-map-pin"
     },
+
     {
         id: 2,
         title: "Sellable Plants",
@@ -41,27 +36,5 @@ export const crmStatisticsData = [
         progress_info: "",
         icon: "feather-alert-circle"
     },
-];
 
-// Add API fetch function here
-export const fetchLiveCRMData = async () => {
-    try {
-        const response = await axios.get(API_URL);
-        
-        if (response.data.success && response.data.data) {
-            return response.data.data.slice(0, MAX_ITEMS_TO_DISPLAY).map((item, index) => ({
-                id: index + 1,
-                title: item.userName || "No Name",
-                total_number: item.phoneNumber || "N/A",
-                completed_number: item.email || "N/A",
-                progress: "",
-                progress_info: "",
-                icon: "feather-user"
-            }));
-        }
-        return [];
-    } catch (error) {
-        console.error('API Error:', error);
-        throw error; // Throw the error to be caught in the component
-    }
-};
+]
