@@ -1,0 +1,67 @@
+export const productsData = [
+    {
+        name: 'Mango Sapling (Alphonso)',
+        category: 'Fruit Tree',
+        location: 'Zone A',
+        date: '10/05/2023',
+        company: 'Retail',
+        price: "₹150",
+        totalPrice: '₹75,000',
+        sold: "500",
+        status: 'Available',
+        color: "success",
+        image: '/images/gallery/4.png'
+    },
+    {
+        name: 'Areca Palm',
+        category: 'Ornamental',
+        location: 'Zone C',
+        date: '04/18/2023',
+        company: 'Wholesale',
+        price: "₹320",
+        totalPrice: '₹12,800',
+        sold: "40",
+        status: 'Low Stock',
+        color: "warning",
+        image: '/images/gallery/5.png'
+    },
+    {
+        name: 'Rose Plant (Hybrid)',
+        category: 'Flowering',
+        location: 'Greenhouse 1',
+        date: '07/23/2023',
+        company: 'Retail',
+        price: "₹80",
+        totalPrice: '₹48,000',
+        sold: "600",
+        status: 'Available',
+        color: "success",
+        image: '/images/gallery/3.png'
+    },
+    {
+        name: 'Teak Wood Sapling',
+        category: 'Timber',
+        location: 'Zone B',
+        date: '12/21/2023',
+        company: 'Wholesale',
+        price: "₹55",
+        totalPrice: '₹55,000',
+        sold: "1000",
+        status: 'Out of Stock',
+        color: "danger",
+        image: '/images/gallery/2.png'
+    },
+    {
+        name: 'Jasmine (Mogra)',
+        category: 'Flowering',
+        location: 'Greenhouse 2',
+        date: '05/28/2023',
+        company: 'Retail',
+        price: "₹65",
+        totalPrice: '₹32,500',
+        sold: "500",
+        status: 'Available',
+        color: "primary",
+        image: '/images/gallery/1.png'
+    },
+];
