@@ -2,11 +2,11 @@ const list = [
     {
         id: 1,
         user_img: "",
-        user_name: "OM-PLT-00124",
-        user_email: "Unit A",
-        user_status: "Block B2",
-        proposal: "Watered",
-        date: "10:32 AM",
+        user_name: "10:35",
+        user_email: "",
+        user_status: "Suresh",
+        proposal: "Watering Completed",
+        date: "Block B2",
         is_active: {
             position: "active",
             color: "#17c666"
@@ -19,11 +19,11 @@ const list = [
     {
         id: 2,
         user_img: "",
-        user_name: "OM-PLT-00411",
-        user_email: "Unit B",
-        user_status: "Block C1",
-        proposal: "Fertilized",
-        date: "10:41 AM",
+        user_name: "10:52",
+        user_email: "",
+        user_status: "Ravi",
+        proposal: "Fertilizer Applied",
+        date: "Block C3",
         is_active: {
             position: "inactive",
             color: "#ea4d4d"
@@ -35,11 +35,11 @@ const list = [
     {
         id: 3,
         user_img: "",
-        user_name: "OM-PLT-00652",
-        user_email: "Unit C",
-        user_status: "Block D3",
-        proposal: "Sale Zone",
-        date: "10:53 AM",
+        user_name: "11:10",
+        user_email: "",
+        user_status: "Sanju",
+        proposal: "Pest Inspection",
+        date: "Block A4",
         is_active: {
             position: "active",
             color: "#17c666"
@@ -51,11 +51,11 @@ const list = [
     {
         id: 4,
         user_img: "",
-        user_name: "OM-PLT-00911",
-        user_email: "Unit D",
-        user_status: "Block A4",
-        proposal: "Health Check",
-        date: "11:12 AM",
+        user_name: "11:22",
+        user_email: "",
+        user_status: "Ramesh",
+        proposal: "Plants Moved to Dispatch",
+        date: "Block D2",
         is_active: {
             position: "active",
             color: "#17c666"

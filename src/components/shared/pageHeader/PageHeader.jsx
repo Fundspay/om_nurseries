@@ -17,6 +17,10 @@ const PageHeader = ({ children }) => {
         fileName = pathName.split("/")[2]
     }
 
+    if (pathName === "/dashboards/manager") {
+        fileName = "Nursery Operations Manager Dashboard"
+    }
+
     const [isExporting, setIsExporting] = useState(false);
 
     const exportPDF = () => {

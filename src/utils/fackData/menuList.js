@@ -13,7 +13,7 @@ export const menuList = [
             },
             {
                 id: 2,
-                name: "Nursery Operations Manager Dashboard",
+                name: "Manager",
                 path: "/dashboards/manager",
                 subdropdownMenu: false
             },
