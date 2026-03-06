@@ -17,7 +17,7 @@ const NavigationManu = () => {
                 <div className="m-header">
                     <Link to="/" className="b-brand">
                         {/* <!-- ========   change your logo hear   ============ --> */}
-                        <img src="/images/12314-comp-image.png" alt="logo" className="logo logo-lg" />
+                        {/* <img src="/images/12314-comp-image.png" alt="logo" className="logo logo-lg" /> */}
                         <FiSun size={24} className="text-primary logo logo-sm" />
                     </Link>
                 </div>
