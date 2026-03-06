@@ -1,26 +1,25 @@
 export const crmStatisticsData = [
     {
         id: 1,
-        title: "Total Acreage Mapped",
-        total_number: "120",
-        completed_number: "85",
-        progress: "70%",
-        progress_info: "35 Acres Pending",
+        title: "Total Plants",
+        total_number: "205,430",
+        completed_number: "",
+        progress: "100%",
+        progress_info: "",
         icon: "feather-map-pin"
     },
-
     {
         id: 2,
-        title: "Sellable Plants",
-        total_number: "450K",
-        completed_number: "320K",
-        progress: "71%",
-        progress_info: "130K in Growth",
+        title: "Ready for Sale",
+        total_number: "52,430",
+        completed_number: "",
+        progress: "25%",
+        progress_info: "",
         icon: "feather-layers"
     },
     {
         id: 3,
-        title: "Daily Tasks Completed",
+        title: "Daily Tasks",
         total_number: "150",
         completed_number: "112",
         progress: "74%",
@@ -30,11 +29,10 @@ export const crmStatisticsData = [
     {
         id: 4,
         title: "Mortality Rate",
-        total_number: "4.2%",
+        total_number: "3.2%",
         completed_number: "",
-        progress: "4%",
+        progress: "3.2%",
         progress_info: "",
         icon: "feather-alert-circle"
     },
-
 ]

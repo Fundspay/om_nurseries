@@ -11,6 +11,7 @@ import SalesMiscellaneous from '@/components/widgetsMiscellaneous/SalesMiscellan
 import PageHeaderDate from '@/components/shared/pageHeader/PageHeaderDate'
 import PageHeader from '@/components/shared/pageHeader/PageHeader'
 import Footer from '@/components/shared/Footer'
+import QRScanningWidget from '@/components/widgetsMiscellaneous/QRScanningWidget'
 import { projectsDataTwo } from '@/utils/fackData/projectsDataTwo'
 
 const Home = () => {
@@ -23,15 +24,16 @@ const Home = () => {
                 <div className='row'>
                     <SiteOverviewStatistics />
                     <PaymentRecordChart />
-                    
+
                     <TasksOverviewChart />
                     <SalesMiscellaneous isFooterShow={true} dataList={projectsDataTwo} />
-                    
-                    <LatestLeads title={"Latest Leads"} />
-                    <Schedule title={"Upcoming Schedule"} />
-                    <Project cardYSpaceClass="hrozintioal-card" borderShow={true} title="Work Status" />
-                    <TeamProgress title={"Team Progress"} footerShow={true} />
+
+                    <LatestLeads title={"Recent Plant Activity"} />
+                    <Schedule title={"Nursery Task Planner"} />
+                    <Project cardYSpaceClass="hrozintioal-card" borderShow={true} title="Unit / Block Operations Status" />
+                    <TeamProgress title={"Staff Task Activity"} footerShow={true} />
                     <LeadsOverviewChart chartHeight={315} />
+                    <QRScanningWidget />
                 </div>
             </div>
             <Footer />

@@ -2,11 +2,11 @@ const list = [
     {
         id: 1,
         user_img: "",
-        user_name: "Aman Sharma",
-        user_email: "amansharma@gmail.com",
-        user_status: "Completed",
-        proposal: "Sent",
-        date: "11/06/2023 10:53",
+        user_name: "OM-PLT-00124",
+        user_email: "Unit A",
+        user_status: "Block B2",
+        proposal: "Watered",
+        date: "10:32 AM",
         is_active: {
             position: "active",
             color: "#17c666"
@@ -19,11 +19,11 @@ const list = [
     {
         id: 2,
         user_img: "",
-        user_name: "Sanjay Kumar",
-        user_email: "sanjaykumar@gmail.com",
-        user_status: "In Progress",
-        proposal: "New",
-        date: "11/06/2023 10:53",
+        user_name: "OM-PLT-00411",
+        user_email: "Unit B",
+        user_status: "Block C1",
+        proposal: "Fertilized",
+        date: "10:41 AM",
         is_active: {
             position: "inactive",
             color: "#ea4d4d"
@@ -35,11 +35,11 @@ const list = [
     {
         id: 3,
         user_img: "",
-        user_name: "Akash Kumar",
-        user_email: "akashkumar@gmail.com",
-        user_status: "Completed",
-        proposal: "Sent",
-        date: "11/06/2023 10:53",
+        user_name: "OM-PLT-00652",
+        user_email: "Unit C",
+        user_status: "Block D3",
+        proposal: "Sale Zone",
+        date: "10:53 AM",
         is_active: {
             position: "active",
             color: "#17c666"
@@ -51,11 +51,11 @@ const list = [
     {
         id: 4,
         user_img: "",
-        user_name: "Sanjana Patil",
-        user_email: "sanjanapatil@gmail.com",
-        user_status: "Not Interested",
-        proposal: "Returning",
-        date: "11/06/2023 10:53",
+        user_name: "OM-PLT-00911",
+        user_email: "Unit D",
+        user_status: "Block A4",
+        proposal: "Health Check",
+        date: "11:12 AM",
         is_active: {
             position: "active",
             color: "#17c666"

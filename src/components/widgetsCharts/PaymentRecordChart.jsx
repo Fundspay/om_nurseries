@@ -16,7 +16,7 @@ const PaymentRecordChart = () => {
     return (
         <div className="col-xxl-12">
             <div className={`card stretch stretch-full ${isExpanded ? "card-expand" : ""} ${refreshKey ? "card-loading" : ""}`}>
-                <CardHeader title={"Payment Record"} refresh={handleRefresh} remove={handleDelete} expanded={handleExpand} />
+                <CardHeader title={"Plant Growth & Inventory Trend"} refresh={handleRefresh} remove={handleDelete} expanded={handleExpand} />
                 <div className="card-body custom-card-action p-0">
                     <ReactApexChart
                         options={chartOptions}
@@ -26,10 +26,10 @@ const PaymentRecordChart = () => {
                 </div>
                 <div className="card-footer">
                     <div className="row g-4">
-                        <Card bg_color={"bg-primary"} price={"5,48,600"} progress={"81%"} title={"Pending Orders"} />
-                        <Card bg_color={"bg-success"} price={"9,27,500"} progress={"81%"} title={"Completed Sales"} />
-                        <Card bg_color={"bg-danger"} price={"3,86,800"} progress={"81%"} title={"Mortality Loss"} />
-                        <Card bg_color={"bg-dark"} price={"50,66,800"} progress={"81%"} title={"Total Revenue"} />
+                        <Card bg_color={"bg-primary"} price={"25,300"} progress={"81%"} title={"Plants in Propagation"} />
+                        <Card bg_color={"bg-success"} price={"8,540"} progress={"81%"} title={"Plants Dispatched This Month"} />
+                        <Card bg_color={"bg-danger"} price={"1,240"} progress={"81%"} title={"Plants Lost (Mortality Count)"} />
+                        <Card bg_color={"bg-dark"} price={"1.8 Cr"} progress={"81%"} title={"Estimated Inventory Value"} />
                     </div>
                 </div>
                 <CardLoader refreshKey={refreshKey} />

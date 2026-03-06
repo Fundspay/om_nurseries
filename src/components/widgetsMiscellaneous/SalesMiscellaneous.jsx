@@ -14,8 +14,8 @@ const SalesMiscellaneous = ({ isFooterShow, dataList }) => {
                     <div className="p-4">
                         <span className="badge bg-light text-primary text-dark float-end">12%</span>
                         <div className="text-start">
-                            <h4 className="text-reset">₹7,20,000</h4>
-                            <p className="text-reset m-0">Total Sales of the week</p>
+                            <h4 className="text-reset">205,430</h4>
+                            <p className="text-reset m-0">Total Plants</p>
                         </div>
                     </div>
                     <ReactApexChart
@@ -28,7 +28,7 @@ const SalesMiscellaneous = ({ isFooterShow, dataList }) => {
                 </div>
                 <div className="card-body">
                     {
-                        dataList.slice(0, 3).map(({ icon, price, name, sold }, index) => (
+                        dataList.slice(0, 3).map(({ icon, price, name, sold, category }, index) => (
                             <Fragment key={index}>
                                 {index !== 0 && <hr className="border-dashed my-3"></hr>}
                                 <div className="d-flex align-items-center justify-content-between">
@@ -38,12 +38,12 @@ const SalesMiscellaneous = ({ isFooterShow, dataList }) => {
                                         </div>
                                         <div>
                                             <a href="#" className="d-block">{name}</a>
-                                            <span className="fs-12 text-muted">Electronics </span>
+                                            <span className="fs-12 text-muted">{category} </span>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="fw-bold text-dark">{price}</div>
-                                        <div className="fs-12 text-end">{sold} sold</div>
+                                        <div className="fs-12 text-end">{sold}</div>
                                     </div>
                                 </div>
                             </Fragment>

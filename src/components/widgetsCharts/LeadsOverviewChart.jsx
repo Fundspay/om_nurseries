@@ -16,9 +16,9 @@ const LeadsOverviewChart = ({ chartHeight, isFooterShow }) => {
         return null;
     }
     return (
-        <div className="col-xxl-8">
+        <div className="col-xxl-4">
             <div className={`card stretch stretch-full leads-overview ${isExpanded ? "card-expand" : ""} ${refreshKey ? "card-loading" : ""}`}>
-                <CardHeader title={"Leads Overview"} refresh={handleRefresh} remove={handleDelete} expanded={handleExpand} />
+                <CardHeader title={"Plant Category Distribution"} refresh={handleRefresh} remove={handleDelete} expanded={handleExpand} />
 
                 <div className="card-body custom-card-action">
                     <ReactApexChart
@@ -33,7 +33,7 @@ const LeadsOverviewChart = ({ chartHeight, isFooterShow }) => {
                                 <div key={id} className="col-4">
                                     <Link href="#" className="p-2 hstack gap-2 rounded border border-dashed border-gray-5">
                                         <span className={`wd-7 ht-7 rounded-circle d-inline-block circle-${id}`}></span>
-                                        <span>{title}<span className="fs-10 text-muted ms-1">({number}K)</span></span>
+                                        <span>{title}<span className="fs-10 text-muted ms-1">({number}%)</span></span>
                                     </Link>
                                 </div>
                             )

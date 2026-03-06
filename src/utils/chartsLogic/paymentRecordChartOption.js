@@ -19,22 +19,22 @@ export const paymentRecordChartOption = () => {
                 columnWidth: "29%"
             }
         },
-        colors: ["#3454d1", "#a2acc7", "#E1E3EA"],
+        colors: ["#3454d1", "#a2acc7", "#28a745"],
         series: [
             {
-                name: "Payment Rejected",
+                name: "Propagation",
                 type: "bar",
-                data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30, 21]
+                data: [12, 14, 16, 18, 20, 21, 22, 24, 25, 25, 26, 28] // In thousands
             },
             {
-                name: "Payment Completed",
+                name: "Growing",
                 type: "line",
-                data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43, 41]
+                data: [45, 48, 52, 55, 59, 65, 75, 85, 95, 110, 115, 127]
             },
             {
-                name: "Awaiting Payment",
+                name: "Ready for Sale",
                 type: "bar",
-                data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43, 56]
+                data: [8, 9, 12, 14, 18, 22, 28, 35, 42, 45, 48, 52]
             }
         ],
         fill: {
@@ -52,7 +52,7 @@ export const paymentRecordChartOption = () => {
             size: 0
         },
         xaxis: {
-            categories: ["APR/25", "MAY/25", "JUN/25", "JUL/25", "AUG/25", "SEP/25", "OCT/25", "NOV/25", "DEC/25", "JAN/26", "FEB/26", "MAR/26"],
+            categories: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
             axisBorder: {
                 show: !1
             },
@@ -91,7 +91,7 @@ export const paymentRecordChartOption = () => {
             },
             padding: {
                 left: 35,
-                right:28
+                right: 28
             },
         },
         dataLabels: {

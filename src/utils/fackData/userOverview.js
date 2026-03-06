@@ -1,48 +1,27 @@
 export const leadsUserOverview = [
     {
         id: 1,
-        title: "Retail",
-        number: "20"
+        title: "Fruit Plants",
+        number: "30"
     },
     {
         id: 2,
-        title: "Wholesale",
-        number: "15"
+        title: "Flowering Plants",
+        number: "25"
     },
     {
         id: 3,
-        title: "Landscapers",
-        number: "10"
+        title: "Ornamental Plants",
+        number: "20"
     },
     {
         id: 4,
-        title: "Gov. Contracts",
-        number: "18"
-    },
-    {
-        id: 5,
-        title: "Exporters",
-        number: "10"
-    },
-    {
-        id: 6,
-        title: "Corporate",
+        title: "Medicinal Plants",
         number: "15"
     },
     {
-        id: 7,
-        title: "Online D2C",
-        number: "16"
-    },
-    {
-        id: 8,
-        title: "Local Farms",
-        number: "14"
-    },
-    {
-        id: 9,
+        id: 5,
         title: "Others",
         number: "10"
     },
-
 ]
