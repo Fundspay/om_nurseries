@@ -24,10 +24,10 @@ const LatestLeads = ({ title }) => {
                         <table className="table mb-0">
                             <thead>
                                 <tr className="border-b">
-                                    <th scope="row">Users</th>
-                                    <th>Proposal</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
+                                    <th scope="row">Time</th>
+                                    <th>Activity</th>
+                                    <th>Block</th>
+                                    <th>Staff</th>
                                     <th className="text-end">Actions</th>
                                 </tr>
                             </thead>

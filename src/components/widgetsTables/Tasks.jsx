@@ -7,11 +7,11 @@ import { taskAssigneeOptions, taskPriorityOptions, taskStatusOptions } from '@/u
 import SelectDropdown from '@/components/shared/SelectDropdown'
 
 const tasksData = [
-    { taskNumber: '01', taskName: 'Prune Zone A rose bushes', taskDate: '20/10/2023', taskDescription: 'Trim dead branches and apply fungicide.', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
-    { taskNumber: '02', taskName: 'Fertilize Batch 2 saplings', taskDate: '21/10/2023', taskDescription: 'Use NPK 19-19-19 mix for the new mango saplings.', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
-    { taskNumber: '03', taskName: 'Irrigation system maintenance', taskDate: '22/10/2023', taskDescription: 'Check for clogged drip emitters in Greenhouse 1.', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
-    { taskNumber: '04', taskName: 'Audit incoming seed inventory', taskDate: '23/10/2023', taskDescription: 'Verify quantities and quality of the new seed shipment.', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
-    { taskNumber: '05', taskName: 'Pest inspection in Zone C', taskDate: '24/10/2023', taskDescription: 'Look for aphids and spray organic pesticide if needed.', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
+    { taskNumber: '01', taskName: 'Prune Rose Plants – Block A', taskDate: '20/10/2023', taskDescription: 'Trim damaged branches', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
+    { taskNumber: '02', taskName: 'Fertilize Saplings – Unit B', taskDate: '21/10/2023', taskDescription: 'Apply NPK fertilizer', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
+    { taskNumber: '03', taskName: 'Irrigation Maintenance', taskDate: '22/10/2023', taskDescription: 'Check drip irrigation lines', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
+    { taskNumber: '04', taskName: 'Pest Inspection', taskDate: '23/10/2023', taskDescription: 'Check aphid infestation', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
+    { taskNumber: '05', taskName: 'Seedling Tray Cleaning – Unit D', taskDate: '24/10/2023', taskDescription: 'Sanitize trays and tools', status: taskStatusOptions, priority: taskPriorityOptions, assignee: taskAssigneeOptions },
 ];
 const Tasks = ({ title }) => {
     const [selectedOption, setSelectedOption] = useState(null);

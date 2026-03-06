@@ -22,19 +22,19 @@ export const paymentRecordChartOption = () => {
         colors: ["#3454d1", "#a2acc7", "#E1E3EA"],
         series: [
             {
-                name: "Payment Rejected",
+                name: "Watering",
                 type: "bar",
-                data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30, 21]
+                data: [450, 520, 480]
             },
             {
-                name: "Payment Completed",
+                name: "Fertilizer",
                 type: "line",
-                data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43, 41]
+                data: [120, 150, 130]
             },
             {
-                name: "Awaiting Payment",
+                name: "Health Checks",
                 type: "bar",
-                data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43, 56]
+                data: [40, 52, 46]
             }
         ],
         fill: {
@@ -52,7 +52,7 @@ export const paymentRecordChartOption = () => {
             size: 0
         },
         xaxis: {
-            categories: ["APR/25", "MAY/25", "JUN/25", "JUL/25", "AUG/25", "SEP/25", "OCT/25", "NOV/25", "DEC/25", "JAN/26", "FEB/26", "MAR/26"],
+            categories: ["Week 1", "Week 2", "Week 3"],
             axisBorder: {
                 show: !1
             },

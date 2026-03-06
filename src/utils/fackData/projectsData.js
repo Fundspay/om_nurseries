@@ -57,8 +57,8 @@ export const projectsData = {
         {
             id: 1,
             project_logo: "feather-map",
-            project_name: "Zone A Propagation",
-            project_category: "Plant Lifecycle",
+            project_name: "Unit A – Propagation",
+            project_category: "Plant Growth",
             progress: 54,
             badge_color: "bg-soft-primary text-primary",
             progress_color: "bg-primary",
@@ -95,8 +95,8 @@ export const projectsData = {
         {
             id: 2,
             project_logo: "feather-cloud-drizzle",
-            project_name: "Fertilizer Application",
-            project_category: "Nursery Care",
+            project_name: "Unit B – Fertilization",
+            project_category: "Nutrient Application",
             progress: 100,
             status: "Completed",
             badge_color: "bg-soft-success text-success",
@@ -132,8 +132,8 @@ export const projectsData = {
         {
             id: 3,
             project_logo: "feather-scissors",
-            project_name: "Winter Pruning",
-            project_category: "Maintenance",
+            project_name: "Unit C – Pruning",
+            project_category: "Plant Maintenance",
             progress: 90,
             status: "Inprogress",
             badge_color: "bg-soft-primary text-primary",
@@ -169,8 +169,8 @@ export const projectsData = {
         {
             id: 4,
             project_logo: "feather-thermometer",
-            project_name: "Soil Testing",
-            project_category: "Analytics",
+            project_name: "Unit D – Soil Testing",
+            project_category: "Soil Quality Check",
             progress: 37,
             status: "Inprogress",
             badge_color: "bg-soft-primary text-primary",

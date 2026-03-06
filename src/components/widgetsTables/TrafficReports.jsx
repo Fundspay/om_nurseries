@@ -5,12 +5,12 @@ import useCardTitleActions from '@/hooks/useCardTitleActions'
 import { FiMoreVertical } from 'react-icons/fi';
 
 const trafficData = [
-    { source: 'Greenhouse 1', visits: 1500, percentVisits: 'Normal', percentBounce: '12', avgSessionDuration: '8.5/10', avgTimeOnPage: '02:15:30', percentConversion: 'Pass', color: 'success' },
-    { source: 'Zone A', visits: 850, percentVisits: 'Normal', percentBounce: '8', avgSessionDuration: '9.0/10', avgTimeOnPage: '01:30:15', percentConversion: 'Pass', color: 'primary' },
-    { source: 'Zone B', visits: 1200, percentVisits: 'High risk', percentBounce: '45', avgSessionDuration: '5.5/10', avgTimeOnPage: '03:45:00', percentConversion: 'Action Needed', color: 'danger' },
-    { source: 'Zone C', visits: 900, percentVisits: 'Normal', percentBounce: '5', avgSessionDuration: '9.2/10', avgTimeOnPage: '01:20:00', percentConversion: 'Pass', color: 'info' },
-    { source: 'Greenhouse 2', visits: 2000, percentVisits: 'Reviewing', percentBounce: '20', avgSessionDuration: '7.8/10', avgTimeOnPage: '02:50:45', percentConversion: 'Warning', color: 'warning' },
-    { source: 'Nursery Bed', visits: 500, percentVisits: 'Normal', percentBounce: '2', avgSessionDuration: '9.5/10', avgTimeOnPage: '00:45:20', percentConversion: 'Pass', color: 'dark' },
+    { source: 'Unit A – Block 1', visits: 150, percentVisits: 'Routine', percentBounce: '12', avgSessionDuration: '8.5/10', avgTimeOnPage: '02:15:30', percentConversion: 'Good', color: 'success' },
+    { source: 'Unit B – Block 4', visits: 120, percentVisits: 'Routine', percentBounce: '8', avgSessionDuration: '9.0/10', avgTimeOnPage: '01:30:15', percentConversion: 'Good', color: 'primary' },
+    { source: 'Unit C – Block 2', visits: 45, percentVisits: 'Follow-up', percentBounce: '45', avgSessionDuration: '5.5/10', avgTimeOnPage: '03:45:00', percentConversion: 'Attention', color: 'danger' },
+    { source: 'Unit D – Block 3', visits: 90, percentVisits: 'Routine', percentBounce: '5', avgSessionDuration: '9.2/10', avgTimeOnPage: '01:20:00', percentConversion: 'Good', color: 'info' },
+    { source: 'Unit E – Block 5', visits: 120, percentVisits: 'Reviewing', percentBounce: '20', avgSessionDuration: '7.8/10', avgTimeOnPage: '02:50:45', percentConversion: 'Attention', color: 'warning' },
+    { source: 'Unit F – Block 6', visits: 150, percentVisits: 'Routine', percentBounce: '2', avgSessionDuration: '9.5/10', avgTimeOnPage: '00:45:20', percentConversion: 'Good', color: 'dark' },
 ];
 
 
@@ -31,12 +31,12 @@ const TrafficReports = ({ title }) => {
                         <table className="table table-hover mb-0">
                             <thead className="thead-light">
                                 <tr>
-                                    <th>Zone/Area</th>
-                                    <th>Plants Inspected</th>
-                                    <th>Issues Found</th>
-                                    <th>Health Score</th>
-                                    <th>Inspection Time</th>
-                                    <th>Status</th>
+                                    <th>Unit / Block</th>
+                                    <th>Plants Checked</th>
+                                    <th>Health Issues</th>
+                                    <th>Plant Health Score</th>
+                                    <th>Inspection Duration</th>
+                                    <th>Block Status</th>
                                     <th className="text-end">Actions</th>
                                 </tr>
                             </thead>

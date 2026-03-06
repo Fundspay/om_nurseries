@@ -2,11 +2,11 @@ const list = [
     {
         id: 1,
         user_img: "",
-        user_name: "Aman Sharma",
-        user_email: "amansharma@gmail.com",
-        user_status: "Completed",
-        proposal: "Sent",
-        date: "11/06/2023 10:53",
+        user_name: "10:35",
+        user_email: "",
+        user_status: "Suresh",
+        proposal: "Watering Completed",
+        date: "Block B2",
         is_active: {
             position: "active",
             color: "#17c666"
@@ -19,11 +19,11 @@ const list = [
     {
         id: 2,
         user_img: "",
-        user_name: "Sanjay Kumar",
-        user_email: "sanjaykumar@gmail.com",
-        user_status: "In Progress",
-        proposal: "New",
-        date: "11/06/2023 10:53",
+        user_name: "10:52",
+        user_email: "",
+        user_status: "Ravi",
+        proposal: "Fertilizer Applied",
+        date: "Block C3",
         is_active: {
             position: "inactive",
             color: "#ea4d4d"
@@ -35,11 +35,11 @@ const list = [
     {
         id: 3,
         user_img: "",
-        user_name: "Akash Kumar",
-        user_email: "akashkumar@gmail.com",
-        user_status: "Completed",
-        proposal: "Sent",
-        date: "11/06/2023 10:53",
+        user_name: "11:10",
+        user_email: "",
+        user_status: "Sanju",
+        proposal: "Pest Inspection",
+        date: "Block A4",
         is_active: {
             position: "active",
             color: "#17c666"
@@ -51,11 +51,11 @@ const list = [
     {
         id: 4,
         user_img: "",
-        user_name: "Sanjana Patil",
-        user_email: "sanjanapatil@gmail.com",
-        user_status: "Not Interested",
-        proposal: "Returning",
-        date: "11/06/2023 10:53",
+        user_name: "11:22",
+        user_email: "",
+        user_status: "Ramesh",
+        proposal: "Plants Moved to Dispatch",
+        date: "Block D2",
         is_active: {
             position: "active",
             color: "#17c666"
@@ -67,11 +67,11 @@ const list = [
     {
         id: 5,
         user_img: "",
-        user_name: "Himanshu Gupta",
-        user_email: "himanshugupta@gmail.com",
-        user_status: "Completed",
-        proposal: "Sent",
-        date: "11/06/2023 10:53",
+        user_name: "11:40",
+        user_email: "",
+        user_status: "Suresh",
+        proposal: "Inventory Inspection",
+        date: "Block E1",
         is_active: {
             position: "block",
             color: "#91a1b6"

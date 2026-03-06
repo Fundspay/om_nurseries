@@ -1,29 +1,29 @@
 export const managerStatisticsData = [
     {
         id: "primary",
-        title: "Active Farm Zones",
-        total_number: "12",
+        title: "Active Nursery Units",
+        total_number: "10",
         completed_number: "8",
-        progress: "66%",
-        progress_info: "4 zones idle",
+        progress: "80%",
+        progress_info: "2 units inactive",
         icon: "feather-map"
     },
     {
         id: "success",
-        title: "Team Task Completion",
+        title: "Tasks Completed Today",
         total_number: "150",
         completed_number: "125",
         progress: "83%",
-        progress_info: "On track for week",
+        progress_info: "25 remaining today",
         icon: "feather-check-circle"
     },
     {
         id: "warning",
-        title: "Inventory Audits",
+        title: "Block Inspections Done",
         total_number: "5",
         completed_number: "3",
         progress: "60%",
-        progress_info: "2 pending audits",
+        progress_info: "2 pending inspections",
         icon: "feather-clipboard"
     },
     {

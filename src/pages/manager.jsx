@@ -24,13 +24,13 @@ const ManagerDashboard = () => {
                     <ManagerOverviewStatistics />
                     <TasksOverviewChart />
                     <PaymentRecordChart />
-                    <TrafficReports title={"Farm Quality Inspections"} />
+                    <TrafficReports title={"Block Inspection Overview"} />
                     {/* <ProjectsTwo title={"Farm Zones Projects"} className="col-xxl-6" /> */}
-                    <Tasks title={"Upcoming Nursery Tasks"} />
-                    <LatestLeads title={"Latest Customers"} />
-                    <TeamProgress title={"Gardner Progress"} footerShow={true} />
-                    <Schedule title={"Upcoming Schedules"} />
-                    <Project cardYSpaceClass="hrozintioal-card" borderShow={true} title="Zone Status" />
+                    <Tasks title={"Assigned Nursery Tasks"} />
+                    <LatestLeads title={"Recent Nursery Activities"} />
+                    <TeamProgress title={"Field Staff Productivity"} footerShow={true} />
+                    <Schedule title={"Daily Nursery Schedule"} />
+                    <Project cardYSpaceClass="hrozintioal-card" borderShow={true} title="Unit / Block Operation Status" />
                 </div>
             </div>
             <Footer />

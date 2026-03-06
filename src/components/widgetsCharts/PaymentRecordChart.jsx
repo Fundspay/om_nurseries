@@ -16,7 +16,7 @@ const PaymentRecordChart = () => {
     return (
         <div className="col-xxl-12">
             <div className={`card stretch stretch-full ${isExpanded ? "card-expand" : ""} ${refreshKey ? "card-loading" : ""}`}>
-                <CardHeader title={"Payment Record"} refresh={handleRefresh} remove={handleDelete} expanded={handleExpand} />
+                <CardHeader title={"Weekly Nursery Operations Overview"} refresh={handleRefresh} remove={handleDelete} expanded={handleExpand} />
                 <div className="card-body custom-card-action p-0">
                     <ReactApexChart
                         options={chartOptions}
@@ -26,10 +26,10 @@ const PaymentRecordChart = () => {
                 </div>
                 <div className="card-footer">
                     <div className="row g-4">
-                        <Card bg_color={"bg-primary"} price={"5,48,600"} progress={"81%"} title={"Pending Orders"} />
-                        <Card bg_color={"bg-success"} price={"9,27,500"} progress={"81%"} title={"Completed Sales"} />
-                        <Card bg_color={"bg-danger"} price={"3,86,800"} progress={"81%"} title={"Mortality Loss"} />
-                        <Card bg_color={"bg-dark"} price={"50,66,800"} progress={"81%"} title={"Total Revenue"} />
+                        <Card bg_color={"bg-primary"} price={"25,300"} progress={"81%"} title={"Plants in Propagation"} />
+                        <Card bg_color={"bg-success"} price={"2,450"} progress={"81%"} title={"Plants Dispatched This Week"} />
+                        <Card bg_color={"bg-danger"} price={"180"} progress={"81%"} title={"Plant Mortality Count"} />
+                        <Card bg_color={"bg-dark"} price={"₹1.8 Cr"} progress={"81%"} title={"Estimated Inventory Value"} />
                     </div>
                 </div>
                 <CardLoader refreshKey={refreshKey} />
@@ -45,7 +45,7 @@ const Card = ({ title, price, progress, bg_color }) => {
         <div className="col-lg-3">
             <div className="p-3 border border-dashed rounded">
                 <div className="fs-12 text-muted mb-1">{title}</div>
-                <h6 className="fw-bold text-dark">₹{price}</h6>
+                <h6 className="fw-bold text-dark">{price}</h6>
                 <div className="progress mt-2 ht-3">
                     <div className={`progress-bar ${bg_color}`} role="progressbar" style={{ width: progress }}></div>
                 </div>

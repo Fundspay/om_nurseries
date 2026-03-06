@@ -1,12 +1,12 @@
 export const upcomingScheduleList = [
     {
         id: 1,
-        schedule_name: "Dispatch Plant Batch A",
+        schedule_name: "Staff Briefing",
         color: "success",
         date: {
             day: "20",
             month: "Dec",
-            time: "11:30am - 12:30pm"
+            time: "08:00 AM"
         },
         team_members: [
             {
@@ -33,12 +33,12 @@ export const upcomingScheduleList = [
     },
     {
         id: 2,
-        schedule_name: "Pesticide Spraying Zone 2",
+        schedule_name: "Dispatch Plant Batch A",
         color: "warning",
         date: {
             day: "30",
             month: "Dec",
-            time: "10:00am - 12:00pm"
+            time: "10:30 AM"
         },
         team_members: [
             {
@@ -65,12 +65,12 @@ export const upcomingScheduleList = [
     },
     {
         id: 3,
-        schedule_name: "Farm Staff Standup",
+        schedule_name: "Pesticide Spray – Zone 2",
         color: "primary",
         date: {
             day: "17",
             month: "Dec",
-            time: "8:00am - 9:00am"
+            time: "11:00 AM"
         },
         team_members: [
             {
@@ -97,12 +97,12 @@ export const upcomingScheduleList = [
     },
     {
         id: 4,
-        schedule_name: "Inventory Audit Meeting",
+        schedule_name: "Inventory Inspection",
         color: "danger",
         date: {
             day: "25",
             month: "Dec",
-            time: "03:30pm - 05:30pm"
+            time: "03:30 PM"
         },
         team_members: [
             {

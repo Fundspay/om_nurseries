@@ -3,7 +3,7 @@ export const teamMembersList = [
         id: 1,
         thumbnail: "",
         name: "Ravi Kumar",
-        position: "Farm Manager",
+        position: "Nursery Supervisor",
         progress: 40,
         color: "#ea4d4d"
     },

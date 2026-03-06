@@ -5,9 +5,9 @@ import getIcon from '@/utils/getIcon'
 
 
 const overviewInfo = [
-    { title: "Watering Tasks Done", icon: "feather-star", total_number: "45", completed_number: "30", progress: "28", chartColor: "#3454d1", color: "primary" },
-    { title: "Disease Alerts", icon: "feather-file-text", total_number: "12", completed_number: "5", progress: "34", chartColor: "#25b865", color: "success" },
-    { title: "Plants Dispatched", icon: "feather-airplay", total_number: "250", completed_number: "220", progress: "42", chartColor: "#d13b4c", color: "danger" },
+    { title: "Watering Operations Completed", icon: "feather-star", total_number: "45", completed_number: "30", progress: "28", chartColor: "#3454d1", color: "primary" },
+    { title: "Plant Health Issues Detected", icon: "feather-file-text", total_number: "12", completed_number: "5", progress: "34", chartColor: "#25b865", color: "success" },
+    { title: "Plants Ready for Dispatch", icon: "feather-airplay", total_number: "250", completed_number: "220", progress: "42", chartColor: "#d13b4c", color: "danger" },
 ]
 
 const TasksOverviewChart = () => {
