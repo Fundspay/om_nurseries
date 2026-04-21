@@ -71,303 +71,310 @@ import WidgetsTables from "../pages/widgets-tables";
 import WidgetsCharts from "../pages/widgets-charts";
 import WidgetsStatistics from "../pages/widgets-statistics";
 import WidgetsMiscellaneous from "../pages/widgets-miscellaneous";
+import RfidPlantDetails from "../pages/RfidPlantDetails";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
     {
-        path: "/",
-        element: <RootLayout />,
-        children: [
-            {
-                path: "/",
-                element: <Home />
-            },
-            {
-                path: "/dashboards/admin",
-                element: <AdminDashboard />
-            },
-            {
-                path: "/dashboards/manager",
-                element: <ManagerDashboard />
-            },
-            {
-                path: "/dashboards/gardner",
-                element: <GardnerDashboard />
-            },
-            {
-                path: "/dashboards/analytics",
-                element: <Analytics />
-            },
-            {
-                path: "/reports/sales",
-                element: <ReportsSales />
-            },
-            {
-                path: "/reports/leads",
-                element: <ReportsLeads />
-            },
-            {
-                path: "/reports/project",
-                element: <ReportsProject />
-            },
-            {
-                path: "/reports/timesheets",
-                element: <ReportsTimesheets />
-            },
-            {
-                path: "/proposal/list",
-                element: <Proposalist />
-            },
-            {
-                path: "/proposal/view",
-                element: <ProposalView />
-            },
-            {
-                path: "/proposal/edit",
-                element: <ProposalEdit />
-            },
-            {
-                path: "/proposal/create",
-                element: <ProposalCreate />
-            },
-            {
-                path: "/payment/list",
-                element: <PaymentList />
-            },
-            {
-                path: "/payment/view",
-                element: <PaymentView />
-            },
-            {
-                path: "/payment/create",
-                element: <PaymentCreate />
-            },
-            {
-                path: "/customers/list",
-                element: <CustomersList />
-            },
-            {
-                path: "/customers/view",
-                element: <CustomersView />
-            },
-            {
-                path: "/customers/create",
-                element: <CustomersCreate />
-            },
-            {
-                path: "/leads/list",
-                element: <LeadsList />
-            },
-            {
-                path: "/leads/view",
-                element: <LeadsView />
-            },
-            {
-                path: "/leads/create",
-                element: <LeadsCreate />
-            },
-            {
-                path: "/projects/list",
-                element: <ProjectsList />
-            },
-            {
-                path: "/projects/view",
-                element: <ProjectsView />
-            },
-            {
-                path: "/projects/create",
-                element: <ProjectsCreate />
-            },
-            {
-                path: "/widgets/lists",
-                element: <WidgetsLists />
-            },
-            {
-                path: "/widgets/tables",
-                element: <WidgetsTables />
-            },
-            {
-                path: "/widgets/charts",
-                element: <WidgetsCharts />
-            },
-            {
-                path: "/widgets/statistics",
-                element: <WidgetsStatistics />
-            },
-            {
-                path: "/widgets/miscellaneous",
-                element: <WidgetsMiscellaneous />
-            },
-            {
-                path: "/help/knowledgebase",
-                element: <HelpKnowledgebase />
-            },
-
-        ]
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/dashboards/admin",
+          element: <AdminDashboard />,
+        },
+        {
+          path: "/dashboards/manager",
+          element: <ManagerDashboard />,
+        },
+        {
+          path: "/dashboards/gardner",
+          element: <GardnerDashboard />,
+        },
+        {
+          path: "/dashboards/gardner/rfid-details/:id",
+          element: <RfidPlantDetails />,
+        },
+        {
+          path: "/dashboards/analytics",
+          element: <Analytics />,
+        },
+        {
+          path: "/reports/sales",
+          element: <ReportsSales />,
+        },
+        {
+          path: "/reports/leads",
+          element: <ReportsLeads />,
+        },
+        {
+          path: "/reports/project",
+          element: <ReportsProject />,
+        },
+        {
+          path: "/reports/timesheets",
+          element: <ReportsTimesheets />,
+        },
+        {
+          path: "/proposal/list",
+          element: <Proposalist />,
+        },
+        {
+          path: "/proposal/view",
+          element: <ProposalView />,
+        },
+        {
+          path: "/proposal/edit",
+          element: <ProposalEdit />,
+        },
+        {
+          path: "/proposal/create",
+          element: <ProposalCreate />,
+        },
+        {
+          path: "/payment/list",
+          element: <PaymentList />,
+        },
+        {
+          path: "/payment/view",
+          element: <PaymentView />,
+        },
+        {
+          path: "/payment/create",
+          element: <PaymentCreate />,
+        },
+        {
+          path: "/customers/list",
+          element: <CustomersList />,
+        },
+        {
+          path: "/customers/view",
+          element: <CustomersView />,
+        },
+        {
+          path: "/customers/create",
+          element: <CustomersCreate />,
+        },
+        {
+          path: "/leads/list",
+          element: <LeadsList />,
+        },
+        {
+          path: "/leads/view",
+          element: <LeadsView />,
+        },
+        {
+          path: "/leads/create",
+          element: <LeadsCreate />,
+        },
+        {
+          path: "/projects/list",
+          element: <ProjectsList />,
+        },
+        {
+          path: "/projects/view",
+          element: <ProjectsView />,
+        },
+        {
+          path: "/projects/create",
+          element: <ProjectsCreate />,
+        },
+        {
+          path: "/widgets/lists",
+          element: <WidgetsLists />,
+        },
+        {
+          path: "/widgets/tables",
+          element: <WidgetsTables />,
+        },
+        {
+          path: "/widgets/charts",
+          element: <WidgetsCharts />,
+        },
+        {
+          path: "/widgets/statistics",
+          element: <WidgetsStatistics />,
+        },
+        {
+          path: "/widgets/miscellaneous",
+          element: <WidgetsMiscellaneous />,
+        },
+        {
+          path: "/help/knowledgebase",
+          element: <HelpKnowledgebase />,
+        },
+      ],
     },
     {
-        path: "/",
-        element: <LayoutApplications />,
-        children: [
-            {
-                path: "/applications/chat",
-                element: <AppsChat />
-            },
-            {
-                path: "/applications/email",
-                element: <AppsEmail />
-            },
-            {
-                path: "/applications/tasks",
-                element: <AppsTasks />
-            },
-            {
-                path: "/applications/notes",
-                element: <AppsNotes />
-            },
-            {
-                path: "/applications/calender",
-                element: <AppsCalender />
-            },
-            {
-                path: "/applications/storage",
-                element: <AppsStorage />
-            },
-        ]
+      path: "/",
+      element: <LayoutApplications />,
+      children: [
+        {
+          path: "/applications/chat",
+          element: <AppsChat />,
+        },
+        {
+          path: "/applications/email",
+          element: <AppsEmail />,
+        },
+        {
+          path: "/applications/tasks",
+          element: <AppsTasks />,
+        },
+        {
+          path: "/applications/notes",
+          element: <AppsNotes />,
+        },
+        {
+          path: "/applications/calender",
+          element: <AppsCalender />,
+        },
+        {
+          path: "/applications/storage",
+          element: <AppsStorage />,
+        },
+      ],
     },
     {
-        path: "/",
-        element: <LayoutSetting />,
-        children: [
-            {
-                path: "/settings/ganeral",
-                element: <SettingsGaneral />
-            },
-            {
-                path: "/settings/seo",
-                element: <SettingsSeo />
-            },
-            {
-                path: "/settings/tags",
-                element: <SettingsTags />
-            },
-            {
-                path: "/settings/email",
-                element: <SettingsEmail />
-            },
-            {
-                path: "/settings/tasks",
-                element: <SettingsTasks />
-            },
-            {
-                path: "/settings/leads",
-                element: <SettingsLeads />
-            },
-            {
-                path: "/settings/Support",
-                element: <SettingsSupport />
-            },
-            {
-                path: "/settings/finance",
-                element: <SettingsFinance />
-            },
-            {
-                path: "/settings/gateways",
-                element: <SettingsGateways />
-            },
-            {
-                path: "/settings/customers",
-                element: <SettingsCustomers />
-            },
-            {
-                path: "/settings/localization",
-                element: <SettingsLocalization />
-            },
-            {
-                path: "/settings/recaptcha",
-                element: <SettingsRecaptcha />
-            },
-            {
-                path: "/settings/miscellaneous",
-                element: <SettingsMiscellaneous />
-            },
-        ]
+      path: "/",
+      element: <LayoutSetting />,
+      children: [
+        {
+          path: "/settings/ganeral",
+          element: <SettingsGaneral />,
+        },
+        {
+          path: "/settings/seo",
+          element: <SettingsSeo />,
+        },
+        {
+          path: "/settings/tags",
+          element: <SettingsTags />,
+        },
+        {
+          path: "/settings/email",
+          element: <SettingsEmail />,
+        },
+        {
+          path: "/settings/tasks",
+          element: <SettingsTasks />,
+        },
+        {
+          path: "/settings/leads",
+          element: <SettingsLeads />,
+        },
+        {
+          path: "/settings/Support",
+          element: <SettingsSupport />,
+        },
+        {
+          path: "/settings/finance",
+          element: <SettingsFinance />,
+        },
+        {
+          path: "/settings/gateways",
+          element: <SettingsGateways />,
+        },
+        {
+          path: "/settings/customers",
+          element: <SettingsCustomers />,
+        },
+        {
+          path: "/settings/localization",
+          element: <SettingsLocalization />,
+        },
+        {
+          path: "/settings/recaptcha",
+          element: <SettingsRecaptcha />,
+        },
+        {
+          path: "/settings/miscellaneous",
+          element: <SettingsMiscellaneous />,
+        },
+      ],
     },
     {
-        path: "/",
-        element: <LayoutAuth />,
-        children: [
-            {
-                path: "/authentication/login/cover",
-                element: <LoginCover />
-            },
-            {
-                path: "/authentication/login/minimal",
-                element: <LoginMinimal />
-            },
-            {
-                path: "/authentication/login/creative",
-                element: <LoginCreative />
-            },
-            {
-                path: "/authentication/register/cover",
-                element: <RegisterCover />
-            },
-            {
-                path: "/authentication/register/minimal",
-                element: <RegisterMinimal />
-            },
-            {
-                path: "/authentication/register/creative",
-                element: <RegisterCreative />
-            },
-            {
-                path: "/authentication/reset/cover",
-                element: <ResetCover />
-            },
-            {
-                path: "/authentication/reset/minimal",
-                element: <ResetMinimal />
-            },
-            {
-                path: "/authentication/reset/creative",
-                element: <ResetCreative />
-            },
-            {
-                path: "/authentication/404/cover",
-                element: <ErrorCover />
-            },
-            {
-                path: "/authentication/404/minimal",
-                element: <ErrorMinimal />
-            },
-            {
-                path: "/authentication/404/creative",
-                element: <ErrorCreative />
-            },
-            {
-                path: "/authentication/verify/cover",
-                element: <OtpCover />
-            },
-            {
-                path: "/authentication/verify/minimal",
-                element: <OtpMinimal />
-            },
-            {
-                path: "/authentication/verify/creative",
-                element: <OtpCreative />
-            },
-            {
-                path: "/authentication/maintenance/cover",
-                element: <MaintenanceCover />
-            },
-            {
-                path: "/authentication/maintenance/minimal",
-                element: <MaintenanceMinimal />
-            },
-            {
-                path: "/authentication/maintenance/creative",
-                element: <MaintenanceCreative />
-            },
-        ]
-    }
-], { basename: import.meta.env.BASE_URL })
+      path: "/",
+      element: <LayoutAuth />,
+      children: [
+        {
+          path: "/authentication/login/cover",
+          element: <LoginCover />,
+        },
+        {
+          path: "/authentication/login/minimal",
+          element: <LoginMinimal />,
+        },
+        {
+          path: "/authentication/login/creative",
+          element: <LoginCreative />,
+        },
+        {
+          path: "/authentication/register/cover",
+          element: <RegisterCover />,
+        },
+        {
+          path: "/authentication/register/minimal",
+          element: <RegisterMinimal />,
+        },
+        {
+          path: "/authentication/register/creative",
+          element: <RegisterCreative />,
+        },
+        {
+          path: "/authentication/reset/cover",
+          element: <ResetCover />,
+        },
+        {
+          path: "/authentication/reset/minimal",
+          element: <ResetMinimal />,
+        },
+        {
+          path: "/authentication/reset/creative",
+          element: <ResetCreative />,
+        },
+        {
+          path: "/authentication/404/cover",
+          element: <ErrorCover />,
+        },
+        {
+          path: "/authentication/404/minimal",
+          element: <ErrorMinimal />,
+        },
+        {
+          path: "/authentication/404/creative",
+          element: <ErrorCreative />,
+        },
+        {
+          path: "/authentication/verify/cover",
+          element: <OtpCover />,
+        },
+        {
+          path: "/authentication/verify/minimal",
+          element: <OtpMinimal />,
+        },
+        {
+          path: "/authentication/verify/creative",
+          element: <OtpCreative />,
+        },
+        {
+          path: "/authentication/maintenance/cover",
+          element: <MaintenanceCover />,
+        },
+        {
+          path: "/authentication/maintenance/minimal",
+          element: <MaintenanceMinimal />,
+        },
+        {
+          path: "/authentication/maintenance/creative",
+          element: <MaintenanceCreative />,
+        },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL },
+);
