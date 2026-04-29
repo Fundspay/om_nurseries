@@ -1,0 +1,34 @@
+@import "../../public/assets/scss/theme.scss";
+
+/* Remove alternating row colors from all tables */
+.table-striped>tbody>tr:nth-of-type(odd)>*,
+.table-striped>tbody>tr:nth-of-type(even)>*,
+.table>tbody>tr:nth-of-type(odd)>*,
+.table>tbody>tr:nth-of-type(even)>* {
+    --bs-table-accent-bg: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Fix dark mode table text and header colors */
+html.app-skin-dark .table {
+    color: #b1b4c0 !important;
+}
+
+html.app-skin-dark .table> :not(caption)>*>* {
+    color: #b1b4c0 !important;
+}
+
+html.app-skin-dark .table thead tr th {
+    background-color: #121a2d !important;
+    color: #b1b4c0 !important;
+    border-color: #1b2436 !important;
+}
+
+html.app-skin-dark .table tbody tr td .text-dark {
+    color: #b1b4c0 !important;
+}
+
+html.app-skin-dark .table tbody tr td a .text-dark,
+html.app-skin-dark .table tbody tr td a.text-dark {
+    color: #ffffff !important;
+}
